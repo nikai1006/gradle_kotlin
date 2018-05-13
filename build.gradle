@@ -35,8 +35,10 @@ compileTestKotlin {
 }
 
 task printSomething() {
+    println('----------------------------------test---------------')
     println "myname is $myname"
     print  "$myage"
     println ""
     println "$myteacher"
+    println '--------------------------end---------------------------'
 }
