@@ -40,6 +40,10 @@ fun main(args: Array<String>) {
         |${now.day}day
     """.trimMargin()
     println(s8)
+
+    println("-------------------")
+    println(s6.substring(5))
+    println(s6.substring(5,9))
 }
 
 class MyString : Serializable {
