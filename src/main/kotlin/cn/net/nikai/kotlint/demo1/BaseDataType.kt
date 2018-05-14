@@ -16,4 +16,11 @@ fun main(args: Array<String>) {
     var ll = 16L
 
     ll = st.toLong()
+    println(byte)
+    println(i)
+    print(ll)
+    println()
+    println("--------------------------------")
+    println(index("abacdefg", "d"))
+
 }

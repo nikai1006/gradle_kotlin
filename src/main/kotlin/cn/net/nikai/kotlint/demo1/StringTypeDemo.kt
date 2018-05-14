@@ -1,5 +1,6 @@
 package cn.net.nikai.kotlint.demo1
 
+import java.io.Serializable
 import java.util.*
 
 /**
@@ -34,9 +35,17 @@ fun main(args: Array<String>) {
     println(s7)
 
     val s8 = """today is:
-        |${now.year+1900}year
+        |${now.year + 1900}year
         |${now.month}mon
         |${now.day}day
     """.trimMargin()
     println(s8)
+}
+
+class MyString : Serializable {
+
+    public fun index(source: String, tar: String): Int {
+        return if (source == null || tar == null) 0 else source.indexOf(tar)
+    }
+
 }
