@@ -34,10 +34,28 @@ compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+def makeDir = {
+    path ->
+        File dir = new File(path)
+        if (!dir.exists())
+            dir.mkdirs()
+}
+
+task makeJavaDir() {
+    def paths = ['src/main/java', 'src/main/resources', 'src/test/java', 'src/test/resources']
+    paths.forEach(makeDir)
+}
+
+task makeKotlinDir() {
+    dependsOn 'makeJavaDir'
+    def paths = ['src/main/kotlin', 'src/main/resources', 'src/test/kotlin', 'src/test/resources']
+    paths.forEach(makeDir)
+}
+
 task printSomething() {
     println('----------------------------------test---------------')
     println "myname is $myname"
-    print  "$myage"
+    print "$myage"
     println ""
     println "$myteacher"
     println '--------------------------end---------------------------'
