@@ -14,6 +14,11 @@ fun index(source: String, tar: String): Int {
     return if (source == null || tar == null) 0 else source.indexOf(tar)
 }
 
+/**
+ * 返回空时返回值类型Unit可以忽略
+ * @author nikai
+ * @param source 源
+ */
 fun printlast(source: String): Unit {
     if (source == null)
         println()
