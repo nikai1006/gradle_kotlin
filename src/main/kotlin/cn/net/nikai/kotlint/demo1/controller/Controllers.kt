@@ -30,4 +30,23 @@ fun main(args: Array<String>) {
         println(i)
     } while (i < 200)
 
+    println("*****************************************")
+    for (x in 0..4) {
+        for (y in 5 downTo 1) {
+            if (y == x) {
+                break
+            }
+            println("(x,y)=($x,$y)")
+        }
+    }
+    println("--------------")
+    label@ for (x in 0..4) {
+        for (y in 5 downTo 1) {
+            if (y == x) {
+                break@label
+            }
+            println("(x,y)=($x,$y)")
+        }
+    }
+    println("End!")
 }
