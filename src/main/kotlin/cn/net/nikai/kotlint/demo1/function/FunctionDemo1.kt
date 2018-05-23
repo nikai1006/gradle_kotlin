@@ -20,8 +20,12 @@ fun main(args: Array<String>) {
  * @param with
  * @param height
  */
+fun rectangleArea2(with: Double, height: Double) = with * height //如果函数只有一条语句，可以简化为这样，连返回值都可以省略
+
 fun rectangleArea(with: Double, height: Double): Double {
     val area = with * height
     return area
 }
+
+
 
