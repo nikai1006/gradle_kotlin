@@ -15,6 +15,9 @@ import java.io.IOException
 fun main(args: Array<String>) {
     printArea1(30.0, 40.0)
     printArea2(30.0, 40.0)
+    printArea2(30.0, height = 50.0)
+    printArea2(width = 30.0, height = 60.0)//在函数调用时候，一旦其中一个参数采用了命名参数形式传递，那么其后的所有参数都必须使用命名参数形式传递
+//    printArea2(width = 30.0,60.0) //编译错误
     readDate()
 }
 
