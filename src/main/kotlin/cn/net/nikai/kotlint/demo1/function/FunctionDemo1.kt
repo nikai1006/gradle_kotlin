@@ -12,7 +12,8 @@ package cn.net.nikai.kotlint.demo1.function
  * @Modified By:
  */
 fun main(args: Array<String>) {
-    print("20*60长方形面积：${rectangleArea(20.0, 60.0)}")
+    println("20*60长方形面积：${rectangleArea(20.0, 60.0)}")
+    print("20*60长方形面积：${rectangleArea2(20.0, 60.0)}")
 }
 
 /**
