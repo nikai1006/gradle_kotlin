@@ -49,4 +49,13 @@ fun main(args: Array<String>) {
         }
     }
     println("End!")
+    label1@ for (x in 0..4) {
+        for (y in 5 downTo 1 step 2) {
+            if (y == x) {
+                continue@label1
+            }
+            println("(x,y)=($x,$y)")
+        }
+    }
+    println("Game Over!")
 }
