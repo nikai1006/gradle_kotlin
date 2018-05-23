@@ -1,7 +1,7 @@
 package cn.net.nikai.kotlint.demo1.controller
 
 /**
- * demo1 cn.net.nikai.kotlint.demo1.controller
+ * 区间
  * @author: nikai
  * @Description:
  * @Date: Create in 23:32 2018/5/23
