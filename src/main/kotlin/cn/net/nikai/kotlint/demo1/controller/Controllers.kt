@@ -40,10 +40,10 @@ fun main(args: Array<String>) {
         }
     }
     println("--------------")
-    label@ for (x in 0..4) {
+    label1@ for (x in 0..4) {
         for (y in 5 downTo 1) {
             if (y == x) {
-                break@label
+                break@label1 //跳转到label1指向的外循环
             }
             println("(x,y)=($x,$y)")
         }
