@@ -14,6 +14,16 @@ fun calcFun2(num1: Int, num2: Int, operator: Char): Int {
         }
     }
 
+    val resultFun2 = if (operator == '+') {
+        fun(a1: Int, a2: Int): Int {
+            return a1 + a2
+        }
+    } else {
+        fun(s1: Int, s2: Int, opt: String?): Int {
+            return s1 - s2
+        }
+    }
+
     return resultFun(num1, num2)
 }
 
