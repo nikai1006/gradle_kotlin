@@ -4,6 +4,9 @@ buildscript {
 
     repositories {
         mavenCentral()
+        maven {
+            url 'http://nikai.net.cn/content/groups/public/'
+        }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -19,7 +22,11 @@ apply plugin: 'kotlin'
 sourceCompatibility = 1.8
 
 repositories {
+    mavenLocal()
     mavenCentral()
+    maven {
+        url 'http://nikai.net.cn/content/groups/public/'
+    }
 }
 
 dependencies {
